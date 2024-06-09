@@ -68,7 +68,7 @@ const Orders = async () => {
                                                 <p className='text-base-medium text-grey-2 font-bold underline decoration-sky-500'>Quantity:</p>
                                                 <p className='text-base-bold'>{orderItem.quantity}</p>
                                             </div>
-                                        </div>
+                                        </div> 
                                     </div>
                                 ))}
                             </div>
