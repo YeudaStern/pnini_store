@@ -15,7 +15,7 @@ const Wishlist = () => {
 
     const getUser = async () => {
         try {
-            const res = await fetch("/api//users")
+            const res = await fetch("/api/users")
             const data = await res.json()
 
             setSignInUser(data)
