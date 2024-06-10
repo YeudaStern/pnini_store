@@ -10,18 +10,18 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, updateSignInUser }: ProductCardProps) => {
-
     console.log(product);
 
+    const mediaUrl = product.media && product.media.length > 0 ? product.media[0] : '/placeholder-image.png'; // Use a placeholder image if no media is available
 
     return (
         <Link href={`/products/${product._id}`} className='w-[220px] flex flex-col gap-2 max-sm:mx-auto group'>
             <Image
-                src={product.media[0]}
+                src={mediaUrl}
                 alt={product.title}
                 width={250}
                 height={300}
-                className='h-[250px] rounded-lg group-hover:opacity-70 '
+                className='h-[250px] rounded-lg group-hover:opacity-70'
             />
             <div>
                 <p className='text-base-bold'>{product.title}</p>
