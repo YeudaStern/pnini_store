@@ -52,27 +52,27 @@ const Orders = async () => {
                                             )}
                                             <div className="flex flex-col justify-between">
                                                 <div className='flex gap-2'>
-                                                    <p className='text-base-medium text-grey-2 font-bold underline decoration-sky-500'>Title:</p>
+                                                    <p className='text-base-medium text-grey-2 font-bold'>Title:</p>
                                                     <p className='text-base-bold'>{orderItem.product?.title}</p>
                                                 </div>
                                                 {orderItem.color && (
                                                     <div className='flex gap-2'>
-                                                        <p className='text-base-medium text-grey-2 font-bold underline decoration-sky-500'>Color:</p>
+                                                        <p className='text-base-medium text-grey-2 font-bold'>Color:</p>
                                                         <p className='text-base-bold'>{orderItem.color}</p>
                                                     </div>
                                                 )}
                                                 {orderItem.size && (
                                                     <div className='flex gap-2'>
-                                                        <p className='text-base-medium text-grey-2 font-bold underline decoration-sky-500'>Size:</p>
+                                                        <p className='text-base-medium text-grey-2 font-bold'>Size:</p>
                                                         <p className='text-base-bold'>{orderItem.size}</p>
                                                     </div>
                                                 )}
                                                 <div className='flex gap-2'>
-                                                    <p className='text-base-medium text-grey-2 font-bold underline decoration-sky-500'>Price:</p>
+                                                    <p className='text-base-medium text-grey-2 font-bold'>Price:</p>
                                                     <p className='text-base-bold'>{orderItem.product?.price}$</p>
                                                 </div>
                                                 <div className='flex gap-2'>
-                                                    <p className='text-base-medium text-grey-2 font-bold underline decoration-sky-500'>Quantity:</p>
+                                                    <p className='text-base-medium text-grey-2 font-bold'>Quantity:</p>
                                                     <p className='text-base-bold'>{orderItem.quantity}</p>
                                                 </div>
                                             </div>
